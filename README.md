@@ -10,19 +10,19 @@ The focus is not just on building dashboards, but on answering critical lending 
 
 🎯 Business Questions Solved
 
-What is the overall performance of the loan portfolio?
+1.What is the overall performance of the loan portfolio?
 
-How profitable is the lending business?
+2.How profitable is the lending business?
 
-Which customers contribute the most value?
+3.Which customers contribute the most value?
 
-What factors drive loan defaults?
+4.What factors drive loan defaults?
 
-How does credit grade impact risk?
+5.How does credit grade impact risk?
 
-Which loan purposes dominate borrowing behavior?
+6.Which loan purposes dominate borrowing behavior?
 
-Where is the business exposed geographically?
+7.Where is the business exposed geographically?
 
 🧰 Tools & Skills
 
@@ -79,45 +79,45 @@ Top Customers
 
 🔍 Key Insights
 
-The loan portfolio is profitable, with total repayments exceeding disbursements.
+1.The loan portfolio is profitable, with total repayments exceeding disbursements.
 
-Repayment rate exceeds 100%, indicating strong interest income generation.
+2.Repayment rate exceeds 100%, indicating strong interest income generation.
 
-Defaults still exist and impact overall returns.
+3.Defaults still exist and impact overall returns.
 
-Revenue is concentrated among a small group of borrowers.
+4.Revenue is concentrated among a small group of borrowers.
 
-Risk labeling is inconsistent — some “Low Risk” customers still default.
+5.Risk labeling is inconsistent — some “Low Risk” customers still default.
 
-Lower credit grades show higher volatility and default behavior.
+6.Lower credit grades show higher volatility and default behavior.
 
-High DTI borrowers are more likely to struggle with repayment.
+7.High DTI borrowers are more likely to struggle with repayment.
 
-Debt consolidation is the dominant loan purpose.
+8.Debt consolidation is the dominant loan purpose.
 
-Lending is concentrated in a few regions, increasing exposure risk.
+9.Lending is concentrated in a few regions, increasing exposure risk.
 
-Most loans are successfully repaid, but early defaults are present.
+10.Most loans are successfully repaid, but early defaults are present.
 
 🚀 Recommendations
 
-Strengthen credit evaluation using multiple financial indicators.
+1.Strengthen credit evaluation using multiple financial indicators.
 
-Improve risk segmentation for more accurate predictions.
+2.Improve risk segmentation for more accurate predictions.
 
-Focus on retaining high-value and reliable borrowers.
+3.Focus on retaining high-value and reliable borrowers.
 
-Adjust lending strategy based on credit grades.
+4.Adjust lending strategy based on credit grades.
 
-Limit exposure to high DTI customers.
+5.Limit exposure to high DTI customers.
 
-Implement purpose-based lending policies.
+6.Implement purpose-based lending policies.
 
-Expand into underrepresented regions to reduce concentration risk.
+7.Expand into underrepresented regions to reduce concentration risk.
 
-Improve early warning systems and collection strategies.
+8.Improve early warning systems and collection strategies.
 
-Monitor segment-level risk despite high overall profitability.
+9.Monitor segment-level risk despite high overall profitability.
 
 🧠 What This Project Demonstrates
 
