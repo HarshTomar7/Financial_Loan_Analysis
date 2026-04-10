@@ -1,41 +1,58 @@
-Financial Loan Analytics Dashboard
+💳 Financial Loan Analytics Dashboard | SQL + Power BI
 
-An end-to-end data analytics project that analyzes loan portfolio data to uncover credit risk, customer behavior, repayment patterns, and profitability insights using SQL and Power BI.
+An end-to-end data analytics project that analyzes loan portfolio data to uncover credit risk, customer behavior, repayment patterns, and profitability insights for data-driven lending decisions.
 
 🚀 Project Overview
 
-This project simulates a real-world financial analytics scenario where raw loan data is transformed into actionable insights.
+This project simulates a real-world financial analytics scenario where large-scale loan data is transformed into actionable business insights.
 
-The focus is not just on building dashboards, but on answering critical lending and risk-related business questions to support better decision-making.
+The focus goes beyond visualization to solving key lending and risk-related problems, enabling better credit decisions, risk management, and portfolio optimization.
+
+🎯 Problem Statement
+
+Financial institutions manage large loan portfolios but often lack clear visibility into risk, repayment behavior, and profitability drivers.
+
+This project aims to analyze loan data to identify default patterns, evaluate portfolio performance, and improve lending strategies.
 
 🎯 Business Questions Solved
 
-1.What is the overall performance of the loan portfolio?
+What is the overall performance of the loan portfolio?
 
-2.How profitable is the lending business?
+How profitable is the lending business?
 
-3.Which customers contribute the most value?
+Which customers contribute the most value?
 
-4.What factors drive loan defaults?
+What factors drive loan defaults?
 
-5.How does credit grade impact risk?
+How does credit grade impact risk?
 
-6.Which loan purposes dominate borrowing behavior?
+Which loan purposes dominate borrowing behavior?
 
-7.Where is the business exposed geographically?
+Where is the business exposed geographically?
 
 🧰 Tools & Skills
 
-PostgreSQL → Data cleaning, transformation, analysis
+PostgreSQL → Data cleaning, transformation, advanced analysis
 
 Power BI → Dashboard design & storytelling
 
 DAX → KPI calculations (Default Rate, Repayment Rate, CLV proxy)
 
+📁 Dataset
+
+38,000+ loan records
+
+$436M+ total disbursed and $473M+ total repayments
+
+Includes borrower attributes, loan details, credit grade, and repayment status
+
+Covers dimensions like geography, purpose, and customer segments
+
 📊 Dashboard
-<img width="1306" height="728" alt="Page 1" src="https://github.com/user-attachments/assets/1e4f39a0-e11b-47d9-a21c-f5b23cefcd78" />
 
 🔹 Portfolio Performance Overview
+<img width="1306" height="728" alt="Page 1" src="https://github.com/user-attachments/assets/675fa137-ce36-4d84-9088-72297b3df234" />
+
 
 Total Disbursed
 
@@ -53,11 +70,11 @@ Loan Status Distribution
 
 Loan Purpose Analysis
 
-👉 Gives a complete view of business performance, growth, and risk
-
-<img width="1302" height="727" alt="Page 2" src="https://github.com/user-attachments/assets/396728ea-8157-4339-bce3-d85594693bba" />
+👉 Provides a complete view of portfolio performance, growth, and risk
 
 🔹 Customer & Risk Intelligence
+<img width="1302" height="727" alt="Page 2" src="https://github.com/user-attachments/assets/f528bbb7-52d9-48ce-b350-f6d4b4013ee9" />
+
 
 Total Borrowers
 
@@ -79,65 +96,65 @@ Top Customers
 
 🔍 Key Insights
 
-1.The loan portfolio is profitable, with total repayments exceeding disbursements.
+1.The loan portfolio is profitable, with repayments exceeding disbursements
 
-2.Repayment rate exceeds 100%, indicating strong interest income generation.
+2.Repayment rate exceeds 100%, driven by interest income
 
-3.Defaults still exist and impact overall returns.
+3.Defaults exist and impact overall returns
 
-4.Revenue is concentrated among a small group of borrowers.
+4.Revenue is concentrated among a small group of borrowers (Pareto effect)
 
-5.Risk labeling is inconsistent — some “Low Risk” customers still default.
+5.Risk labeling is inconsistent, with some “low-risk” customers defaulting
 
-6.Lower credit grades show higher volatility and default behavior.
+6.Lower credit grades show higher volatility and default behavior
 
-7.High DTI borrowers are more likely to struggle with repayment.
+7.High DTI borrowers are more likely to struggle with repayment
 
-8.Debt consolidation is the dominant loan purpose.
+8.Debt consolidation is the most common loan purpose
 
-9.Lending is concentrated in a few regions, increasing exposure risk.
+9.Lending is concentrated in a few regions, increasing exposure risk
 
-10.Most loans are successfully repaid, but early defaults are present.
+10.Most loans are repaid successfully, but early defaults are present
 
 🚀 Recommendations
 
-1.Strengthen credit evaluation using multiple financial indicators.
+1.Strengthen credit evaluation using multiple financial indicators
 
-2.Improve risk segmentation for more accurate predictions.
+2.Improve risk segmentation for more accurate predictions
 
-3.Focus on retaining high-value and reliable borrowers.
+3.Focus on retaining high-value and reliable borrowers
 
-4.Adjust lending strategy based on credit grades.
+4.Adjust lending strategy based on credit grades
 
-5.Limit exposure to high DTI customers.
+5.Limit exposure to high DTI customers
 
-6.Implement purpose-based lending policies.
+6.Implement purpose-based lending policies
 
-7.Expand into underrepresented regions to reduce concentration risk.
+7.Expand into underrepresented regions to reduce concentration risk
 
-8.Improve early warning systems and collection strategies.
+8.Improve early warning systems and collection strategies
 
-9.Monitor segment-level risk despite high overall profitability.
+9.Monitor segment-level risk despite high overall profitability
 
-🧠 What This Project Demonstrates
+📊 Key Metrics
 
-Strong SQL skills with real-world financial queries
+Default Rate = Defaulted Loans / Total Loans
 
-Ability to translate complex data into business insights
+Repayment Rate = Total Received / Total Disbursed
 
-Understanding of credit risk and lending analytics
+Profit = Total Received – Total Disbursed
 
-Dashboard design focused on clarity and decision-making
+DTI (Debt-to-Income) = Debt / Income
 
-Knowledge of key financial metrics like default rate & repayment efficiency
+CLV (Proxy) = Total Paid per Customer
 
 
-🎯 Final Outcome
+💼 Business Impact
 
-This project transforms raw loan data into:
+Enabled better credit risk assessment and decision-making
 
-Clear business insights
+Identified high-risk borrower segments
 
-Actionable recommendations
+Improved understanding of portfolio profitability
 
-An interactive dashboard for financial decision-making
+Provided insights to optimize lending strategy and reduce defaults
