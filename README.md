@@ -1,160 +1,142 @@
-💳 Financial Loan Analytics Dashboard | SQL + Power BI
+# 🏦 Bank Loan Analysis
+**SQL + Power BI &nbsp;|&nbsp; Harsh Singh Tomar**
 
-An end-to-end data analytics project that analyzes loan portfolio data to uncover credit risk, customer behavior, repayment patterns, and profitability insights for data-driven lending decisions.
+---
 
-🚀 Project Overview
+## The Problem
 
-This project simulates a real-world financial analytics scenario where large-scale loan data is transformed into actionable business insights.
+A bank gives out thousands of loans every month.
 
-The focus goes beyond visualization to solving key lending and risk-related problems, enabling better credit decisions, risk management, and portfolio optimization.
+Some borrowers pay back on time. Some don't. The bank needs to know:
+- Are we actually making money?
+- Which borrowers are risky?
+- Where are the losses coming from?
 
-🎯 Problem Statement
+I took a dataset of **38,000+ real loan records** and tried to answer these questions using SQL and Power BI.
 
-Financial institutions manage large loan portfolios but often lack clear visibility into risk, repayment behavior, and profitability drivers.
+---
 
-This project aims to analyze loan data to identify default patterns, evaluate portfolio performance, and improve lending strategies.
+## The Data
 
-🎯 Business Questions Solved
+Each row in the dataset is one loan. It tells us:
+- How much was given, and how much was paid back
+- The borrower's income, job, and credit grade
+- Whether the loan was fully paid, defaulted, or still ongoing
+- Why they took the loan (debt consolidation, car, business, etc.)
 
-What is the overall performance of the loan portfolio?
+---
 
-How profitable is the lending business?
+## What I Did — Step by Step
 
-Which customers contribute the most value?
+### Step 1 — Is the bank profitable?
+The first thing I checked was the big picture. Total money given out vs total money received.
 
-What factors drive loan defaults?
+> **Result:** $436M disbursed → $473M received → **$37M profit**
 
-How does credit grade impact risk?
+The bank is profitable. But that profit hides some risk underneath, which is what I explored next.
 
-Which loan purposes dominate borrowing behavior?
+---
 
-Where is the business exposed geographically?
+### Step 2 — How many loans went bad?
+I broke down loans by status: Fully Paid, Charged Off (defaulted), or Current.
 
-🧰 Tools & Skills
+> **Result:** 83% paid back, **13.82% defaulted**, 3% ongoing
 
-PostgreSQL → Data cleaning, transformation, advanced analysis
+So roughly **1 in 7 loans** never got fully paid back. That's a real problem.
 
-Power BI → Dashboard design & storytelling
+---
 
-DAX → KPI calculations (Default Rate, Repayment Rate, CLV proxy)
+### Step 3 — Who is defaulting?
+The bank assigns credit grades A to G (A = most reliable, G = riskiest). I checked whether this grade actually predicts who defaults.
 
-📁 Dataset
+| Grade | Default Rate |
+|-------|-------------|
+| A | 5.7% |
+| B | 11.5% |
+| C | 16.0% |
+| D | 20.7% |
+| E | 24.8% |
+| F | 30.3% |
+| G | 31.3% |
 
-38,000+ loan records
+> **Finding:** The grade system works — there's a clear pattern from safe to risky. Grade G borrowers default at **5x the rate** of Grade A borrowers.
 
-$436M+ total disbursed and $473M+ total repayments
+---
 
-Includes borrower attributes, loan details, credit grade, and repayment status
+### Step 4 — Why are people borrowing?
+I looked at what borrowers said they needed the money for.
 
-Covers dimensions like geography, purpose, and customer segments
+> **Finding:** Debt consolidation alone accounts for **$232M — more than half the portfolio.** People are taking new loans to pay off old debts. Small business loans had the highest default rate.
 
-📊 Dashboard
+---
 
-🔹 Portfolio Performance Overview
-<img width="1306" height="728" alt="Page 1" src="https://github.com/user-attachments/assets/675fa137-ce36-4d84-9088-72297b3df234" />
+### Step 5 — Does income predict repayment?
+I split borrowers into low, mid, and high income groups and compared their behaviour.
 
+> **Surprising finding:** High-income borrowers don't default significantly less. The **DTI ratio** (how much debt they already have vs their income) was a better predictor than income alone.
 
-Total Disbursed
+---
 
-Total Received
+### Step 6 — Does loan length matter?
+I compared 36-month vs 60-month loans.
 
-Profit
+> **Finding:** 60-month loans default more. The longer the repayment period, the more chances for something to go wrong in the borrower's life.
 
-Default Rate
+---
 
-Monthly Disbursed vs Received Trend
+## Dashboard
 
-Loan Distribution by Credit Grade
+### Page 1 — Portfolio Overview
+![Page 1](Page_1.png)
 
-Loan Status Distribution
+A high-level view of the whole portfolio — total numbers, monthly trends, default rate, and loan breakdown by grade and purpose.
 
-Loan Purpose Analysis
+### Page 2 — Borrower & Risk View
+![Page 2](Page_2.png)
 
-👉 Provides a complete view of portfolio performance, growth, and risk
+Focuses on who the borrowers are — income groups, risk segments, and how default rates vary across credit grades.
 
-🔹 Customer & Risk Intelligence
-<img width="1302" height="727" alt="Page 2" src="https://github.com/user-attachments/assets/f528bbb7-52d9-48ce-b350-f6d4b4013ee9" />
+---
 
+## What I Concluded
 
-Total Borrowers
+The bank is profitable, but the 13.82% default rate means **millions of dollars are being written off every year.** The main risk factors are:
 
-Total Paid per Customer
+1. **Low credit grade** — Grade F and G borrowers default at 30%+
+2. **High DTI** — borrowers already stretched thin are more likely to default
+3. **Longer loan terms** — 60-month loans carry more risk than 36-month ones
+4. **Geographic concentration** — most loans are in a few states; if those economies suffer, the bank suffers
 
-Average Interest Rate
+---
 
-Average DTI
+## What I'd Do Next
 
-Risk Segment Distribution
+If I had more time, I'd:
+- Build a simple scorecard to predict default probability before a loan is approved
+- Look at whether default rates changed over the months (seasonal trends)
+- Clean up income outliers — some values looked unrealistically high
 
-Credit Grade vs Interest Analysis
+---
 
-Income Group vs Loan Behavior
+## Tools
 
-Top Customers
+| Tool | Used For |
+|---|---|
+| PostgreSQL | All data analysis and querying |
+| Power BI | Dashboard and visualisations |
+| DAX | KPI calculations (default rate, repayment rate) |
 
-👉 Focuses on customer quality, segmentation, and risk exposure
+---
 
-🔍 Key Insights
+## Files
 
-1.The loan portfolio is profitable, with repayments exceeding disbursements
+```
+├── loan_analysis.sql   → 9 queries that walk through the full analysis
+├── README.md           → This file
+├── Page_1.png          → Dashboard page 1
+└── Page_2.png          → Dashboard page 2
+```
 
-2.Repayment rate exceeds 100%, driven by interest income
+---
 
-3.Defaults exist and impact overall returns
-
-4.Revenue is concentrated among a small group of borrowers (Pareto effect)
-
-5.Risk labeling is inconsistent, with some “low-risk” customers defaulting
-
-6.Lower credit grades show higher volatility and default behavior
-
-7.High DTI borrowers are more likely to struggle with repayment
-
-8.Debt consolidation is the most common loan purpose
-
-9.Lending is concentrated in a few regions, increasing exposure risk
-
-10.Most loans are repaid successfully, but early defaults are present
-
-🚀 Recommendations
-
-1.Strengthen credit evaluation using multiple financial indicators
-
-2.Improve risk segmentation for more accurate predictions
-
-3.Focus on retaining high-value and reliable borrowers
-
-4.Adjust lending strategy based on credit grades
-
-5.Limit exposure to high DTI customers
-
-6.Implement purpose-based lending policies
-
-7.Expand into underrepresented regions to reduce concentration risk
-
-8.Improve early warning systems and collection strategies
-
-9.Monitor segment-level risk despite high overall profitability
-
-📊 Key Metrics
-
-Default Rate = Defaulted Loans / Total Loans
-
-Repayment Rate = Total Received / Total Disbursed
-
-Profit = Total Received – Total Disbursed
-
-DTI (Debt-to-Income) = Debt / Income
-
-CLV (Proxy) = Total Paid per Customer
-
-
-💼 Business Impact
-
-Enabled better credit risk assessment and decision-making
-
-Identified high-risk borrower segments
-
-Improved understanding of portfolio profitability
-
-Provided insights to optimize lending strategy and reduce defaults
+*Personal learning project by Harsh Singh Tomar*

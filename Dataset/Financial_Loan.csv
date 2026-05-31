@@ -1,4 +1,4 @@
-Id,Address_State,Application_Type,Emp_Length,Emp_Title,Grade,Home_Ownership,Issue_Date,Last_Credit_Pull_Date,Last_Payment_Date,Loan_Status,Next_Payment_Date,Member_Id,Purpose,Sub_Grade,Term,Verification_Status,Annual_Income,Dti,Installment,Int_Rate,Loan_Amount,Total_Acc,Total_Payment
+﻿Id,Address_State,Application_Type,Emp_Length,Emp_Title,Grade,Home_Ownership,Issue_Date,Last_Credit_Pull_Date,Last_Payment_Date,Loan_Status,Next_Payment_Date,Member_Id,Purpose,Sub_Grade,Term,Verification_Status,Annual_Income,Dti,Installment,Int_Rate,Loan_Amount,Total_Acc,Total_Payment
 1077430,GA,INDIVIDUAL,< 1 year,Ryder,C,RENT,2/11/2021,9/13/2021,4/13/2021,Charged Off,5/13/2021,1314167,Car,C4, 60 months,Source Verified,30000,0.01,59.83,0.1527,2500,4,1009
 1072053,CA,INDIVIDUAL,9 years,Mkc Accounting,E,RENT,1/1/2021,12/14/2021,1/15/2021,Fully Paid,2/15/2021,1288686,Car,E1, 36 months,Source Verified,48000,0.0535,109.43,0.1864,3000,4,3939
 1069243,CA,INDIVIDUAL,4 years,Chemat Technology Inc,C,RENT,1/5/2021,12/12/2021,1/9/2021,Charged Off,2/9/2021,1304116,Car,C5, 36 months,Not Verified,50000,0.2088,421.65,0.1596,12000,11,3522
@@ -391,7 +391,7 @@ Id,Address_State,Application_Type,Emp_Length,Emp_Title,Grade,Home_Ownership,Issu
 727311,CA,INDIVIDUAL,10+ years,Marin Community College District,A,RENT,4/11/2021,5/14/2021,5/14/2021,Fully Paid,6/14/2021,922807,Car,A5, 36 months,Not Verified,53196,0.166,93.54,0.0766,3000,21,3383
 629917,OR,INDIVIDUAL,2 years,Ibis Advisors Co.,A,RENT,12/10/2021,10/11/2021,10/11/2021,Fully Paid,11/11/2021,807060,Car,A2, 36 months,Not Verified,70000,0.0185,131.93,0.0579,4350,15,4536
 583684,FL,INDIVIDUAL,2 years,Zuccareli'S,A,RENT,9/10/2021,10/13/2021,10/13/2021,Fully Paid,11/13/2021,750023,Car,A2, 36 months,Not Verified,30000,0.0568,127.69,0.0676,4150,21,4597
-348105,VA,INDIVIDUAL,2 years,E� Inc.,A,RENT,5/8/2021,6/13/2021,9/10/2021,Fully Paid,10/10/2021,349026,Car,A3, 36 months,Not Verified,44500,0.0777,219.36,0.08,7000,21,7833
+348105,VA,INDIVIDUAL,2 years,Eâ² Inc.,A,RENT,5/8/2021,6/13/2021,9/10/2021,Fully Paid,10/10/2021,349026,Car,A3, 36 months,Not Verified,44500,0.0777,219.36,0.08,7000,21,7833
 732993,TX,INDIVIDUAL,2 years,Valley Regional Medical Center,A,RENT,4/11/2021,5/16/2021,5/14/2021,Fully Paid,6/14/2021,929259,Car,A5, 36 months,Not Verified,66000,0.0095,218.26,0.0766,7000,7,7857
 549244,TX,INDIVIDUAL,3 years,Rice University - School Of Music,A,RENT,7/10/2021,3/12/2021,4/12/2021,Fully Paid,5/12/2021,708032,Car,A2, 36 months,Not Verified,52800,0.1139,138.46,0.0676,4500,24,4774
 702817,NY,INDIVIDUAL,3 years,Unknown,A,RENT,3/11/2021,3/14/2021,4/14/2021,Fully Paid,5/14/2021,894687,Car,A3, 36 months,Not Verified,24000,0.056,154.21,0.0692,5000,10,5551
@@ -5914,7 +5914,7 @@ Id,Address_State,Application_Type,Emp_Length,Emp_Title,Grade,Home_Ownership,Issu
 1049595,TX,INDIVIDUAL,2 years,Pharmerica,D,RENT,12/11/2021,5/16/2021,9/14/2021,Fully Paid,10/14/2021,1280817,Credit Card,D3, 60 months,Source Verified,61500,0.1286,316.23,0.1727,12650,27,17469
 1056070,OH,INDIVIDUAL,3 years,Whole Foods Market,D,RENT,12/11/2021,3/16/2021,4/15/2021,Fully Paid,5/15/2021,1287644,Credit Card,D5, 60 months,Source Verified,24000,0.118,306.36,0.1825,12000,13,17562
 609146,NY,INDIVIDUAL,7 years,Economic Advantages Corporation,D,RENT,11/10/2021,5/13/2021,8/12/2021,Fully Paid,9/12/2021,781354,Credit Card,D5, 60 months,Source Verified,36500,0.1742,144.55,0.1557,6000,24,7437
-616327,NY,INDIVIDUAL,< 1 year,Mec�¢Con Associates Inc.,D,RENT,11/10/2021,5/13/2021,5/13/2021,Fully Paid,6/13/2021,790281,Credit Card,D3, 60 months,Source Verified,31200,0.1088,189.61,0.1483,8000,6,10418
+616327,NY,INDIVIDUAL,< 1 year,Mecã¢Â€Â¢Con Associates Inc.,D,RENT,11/10/2021,5/13/2021,5/13/2021,Fully Paid,6/13/2021,790281,Credit Card,D3, 60 months,Source Verified,31200,0.1088,189.61,0.1483,8000,6,10418
 739925,NY,INDIVIDUAL,1 year,American Campus Communities,D,RENT,5/11/2021,5/15/2021,7/14/2021,Fully Paid,8/14/2021,937553,Credit Card,D3, 60 months,Source Verified,53140,0.1219,191.5,0.1528,8000,14,10931
 998087,OH,INDIVIDUAL,1 year,Marathon Petroleum,D,RENT,10/11/2021,5/16/2021,4/15/2021,Fully Paid,5/15/2021,1223224,Credit Card,D3, 60 months,Source Verified,68000,0.2045,149.99,0.1727,6000,15,8632
 603634,WI,INDIVIDUAL,10+ years,Milliman,D,RENT,10/10/2021,5/16/2021,5/12/2021,Fully Paid,6/12/2021,774528,Credit Card,D2, 60 months,Source Verified,63450,0.2216,141.05,0.1446,6000,27,7166
@@ -10327,7 +10327,7 @@ Id,Address_State,Application_Type,Emp_Length,Emp_Title,Grade,Home_Ownership,Issu
 1038970,TX,INDIVIDUAL,5 years,All American Flags And Banners,A,RENT,11/11/2021,4/16/2021,11/14/2021,Fully Paid,12/14/2021,1268687,Debt Consolidation,A2, 36 months,Not Verified,28800,0.2117,171.18,0.0662,5575,33,6156
 675917,NV,INDIVIDUAL,5 years,Wells Fargo Bank,A,RENT,2/11/2021,9/14/2021,4/12/2021,Fully Paid,5/12/2021,863777,Debt Consolidation,A2, 36 months,Not Verified,66200,0.0754,257.78,0.0579,8500,17,8924
 635933,TX,INDIVIDUAL,5 years,Henry Schein,A,RENT,12/10/2021,11/13/2021,3/12/2021,Fully Paid,4/12/2021,814653,Debt Consolidation,A2, 36 months,Not Verified,29496,0.2152,181.97,0.0579,6000,14,6337
-622067,VA,INDIVIDUAL,5 years,E�² Inc.,A,RENT,12/10/2021,6/13/2021,10/12/2021,Fully Paid,11/12/2021,797256,Debt Consolidation,A2, 36 months,Not Verified,62500,0.2092,250.96,0.0579,11500,22,8910
+622067,VA,INDIVIDUAL,5 years,Eã‚Â² Inc.,A,RENT,12/10/2021,6/13/2021,10/12/2021,Fully Paid,11/12/2021,797256,Debt Consolidation,A2, 36 months,Not Verified,62500,0.2092,250.96,0.0579,11500,22,8910
 965950,CA,INDIVIDUAL,5 years,"Envy Medical, Inc.",A,RENT,9/11/2021,5/16/2021,10/14/2021,Fully Paid,11/14/2021,1186801,Debt Consolidation,A2, 36 months,Not Verified,38000,0.0439,171.95,0.0662,5600,23,6190
 732078,CA,INDIVIDUAL,5 years,County Of Santa Cruz,A,RENT,4/11/2021,5/16/2021,3/14/2021,Fully Paid,4/14/2021,928227,Debt Consolidation,A2, 36 months,Not Verified,71000,0.0979,291.14,0.0579,9600,32,10465
 769756,TX,INDIVIDUAL,5 years,Applied Materials,A,RENT,6/11/2021,5/16/2021,6/14/2021,Fully Paid,7/14/2021,971266,Debt Consolidation,A2, 36 months,Not Verified,63000,0.1566,280.61,0.0599,9225,45,10102
@@ -16034,7 +16034,7 @@ Id,Address_State,Application_Type,Emp_Length,Emp_Title,Grade,Home_Ownership,Issu
 488657,MO,INDIVIDUAL,< 1 year,Envision,B,MORTGAGE,3/10/2021,1/12/2021,9/11/2021,Charged Off,10/11/2021,623292,Debt Consolidation,B4, 36 months,Verified,98000,0.2102,654.71,0.1099,20000,35,14626
 576077,CA,INDIVIDUAL,10+ years,Unified Healthcare Inc,B,MORTGAGE,9/10/2021,5/16/2021,10/11/2021,Charged Off,11/11/2021,740894,Debt Consolidation,B2, 36 months,Verified,128899.92,0.1757,391.45,0.1075,12000,37,5074
 445083,CA,INDIVIDUAL,1 year,Midwest Insurance Company,C,MORTGAGE,10/9/2021,5/16/2021,4/10/2021,Charged Off,5/10/2021,543196,Debt Consolidation,C2, 36 months,Verified,107000,0.1705,669.26,0.1322,19800,35,4624
-481015,FL,INDIVIDUAL,1 year,Sol Meli���¡ Vacation Club,C,MORTGAGE,2/10/2021,10/13/2021,2/13/2021,Charged Off,3/13/2021,611645,Debt Consolidation,C2, 36 months,Verified,65000,0.1429,674.9,0.1311,20000,33,23655
+481015,FL,INDIVIDUAL,1 year,Sol Meliãƒâƒã‚Â¡ Vacation Club,C,MORTGAGE,2/10/2021,10/13/2021,2/13/2021,Charged Off,3/13/2021,611645,Debt Consolidation,C2, 36 months,Verified,65000,0.1429,674.9,0.1311,20000,33,23655
 971107,AZ,INDIVIDUAL,10+ years,American Airlines,C,MORTGAGE,10/11/2021,5/13/2021,11/12/2021,Charged Off,12/12/2021,1192821,Debt Consolidation,C2, 36 months,Verified,33000,0.08,68.62,0.1427,2000,24,968
 519281,FL,INDIVIDUAL,10+ years,Wachovia Bank,C,MORTGAGE,5/10/2021,5/16/2021,1/11/2021,Charged Off,2/11/2021,671319,Debt Consolidation,C5, 36 months,Verified,128004,0.1291,831.41,0.1422,24250,23,5812
 531734,AZ,INDIVIDUAL,4 years,Arizona Ophthalmic Outpatient Surgery,C,MORTGAGE,6/10/2021,9/12/2021,5/12/2021,Charged Off,6/12/2021,687399,Debt Consolidation,C1, 36 months,Verified,83200,0.0945,743.71,0.1323,22000,45,15972
@@ -16866,7 +16866,7 @@ Id,Address_State,Application_Type,Emp_Length,Emp_Title,Grade,Home_Ownership,Issu
 395295,FL,INDIVIDUAL,2 years,Walgreens,B,MORTGAGE,4/9/2021,5/16/2021,5/12/2021,Fully Paid,6/12/2021,434652,Debt Consolidation,B5, 36 months,Verified,80600,0.0348,499.73,0.1221,15000,18,17990
 616473,NJ,INDIVIDUAL,2 years,Lakehurst Naval Base,B,MORTGAGE,11/10/2021,1/16/2021,3/12/2021,Fully Paid,4/12/2021,790455,Debt Consolidation,B5, 36 months,Verified,66887,0.1189,491.42,0.1036,25000,14,16688
 592052,OH,INDIVIDUAL,2 years,"Gardens Alive, Inc",B,MORTGAGE,10/10/2021,10/15/2021,10/13/2021,Fully Paid,11/13/2021,760418,Debt Consolidation,B5, 36 months,Verified,65000,0.2346,278.44,0.1186,8400,23,10033
-437948,MA,INDIVIDUAL,2 years,Kanon Bloch Carr��,B,MORTGAGE,9/9/2021,4/16/2021,9/12/2021,Fully Paid,10/12/2021,526756,Debt Consolidation,B5, 36 months,Verified,111262,0.1136,669.33,0.1253,20000,46,24096
+437948,MA,INDIVIDUAL,2 years,Kanon Bloch Carrãƒâ©,B,MORTGAGE,9/9/2021,4/16/2021,9/12/2021,Fully Paid,10/12/2021,526756,Debt Consolidation,B5, 36 months,Verified,111262,0.1136,669.33,0.1253,20000,46,24096
 413524,AZ,INDIVIDUAL,3 years,Bank Of America,B,MORTGAGE,6/9/2021,3/15/2021,3/12/2021,Fully Paid,4/12/2021,467023,Debt Consolidation,B1, 36 months,Verified,72000,0.0932,392.57,0.1095,12000,30,14155
 488695,IL,INDIVIDUAL,3 years,Unknown,B,MORTGAGE,3/10/2021,5/16/2021,3/13/2021,Fully Paid,4/13/2021,623344,Debt Consolidation,B1, 36 months,Verified,50000,0.2455,483.16,0.0988,15000,20,17395
 792105,DC,INDIVIDUAL,3 years,Department Of State,B,MORTGAGE,7/11/2021,6/15/2021,11/11/2021,Fully Paid,12/11/2021,996499,Debt Consolidation,B1, 36 months,Verified,64548,0.1748,483.94,0.0999,15000,22,15482
@@ -35949,7 +35949,7 @@ Id,Address_State,Application_Type,Emp_Length,Emp_Title,Grade,Home_Ownership,Issu
 538520,NJ,INDIVIDUAL,10+ years,Unknown,A,RENT,7/10/2021,7/13/2021,7/13/2021,Fully Paid,8/13/2021,695488,Small Business,A4, 36 months,Not Verified,68000,0.0445,217.78,0.0751,7000,8,7840
 610964,NJ,INDIVIDUAL,10+ years,National Park Service,A,RENT,11/10/2021,11/13/2021,12/13/2021,Fully Paid,1/13/2022,783511,Small Business,A4, 36 months,Not Verified,60000,0.1074,330.44,0.0654,17500,46,11896
 741734,MD,INDIVIDUAL,2 years,Cordish Company,A,RENT,5/11/2021,5/14/2021,5/14/2021,Fully Paid,6/14/2021,939717,Small Business,A1, 36 months,Not Verified,62000,0.0753,126.68,0.0542,4200,10,4560
-987227,NY,INDIVIDUAL,2 years,Mad��Casse,A,RENT,10/11/2021,5/16/2021,11/14/2021,Fully Paid,12/14/2021,1211233,Small Business,A4, 36 months,Not Verified,52000,0.0916,375.49,0.079,12000,11,13517
+987227,NY,INDIVIDUAL,2 years,Madãƒâ©Casse,A,RENT,10/11/2021,5/16/2021,11/14/2021,Fully Paid,12/14/2021,1211233,Small Business,A4, 36 months,Not Verified,52000,0.0916,375.49,0.079,12000,11,13517
 376249,CA,INDIVIDUAL,2 years,Seaside Maintenance,A,RENT,2/9/2021,5/16/2021,2/12/2021,Fully Paid,3/12/2021,399172,Small Business,A4, 36 months,Not Verified,50000,0.078,223.63,0.0932,7000,17,8051
 370957,HI,INDIVIDUAL,2 years,Nordstrom,A,RENT,1/9/2021,12/12/2021,3/10/2021,Fully Paid,4/10/2021,388254,Small Business,A5, 36 months,Not Verified,62000,0.0635,192.57,0.0963,6000,5,6582
 607333,VA,INDIVIDUAL,3 years,"Kcic, Llc",A,RENT,11/10/2021,2/12/2021,2/12/2021,Fully Paid,3/12/2021,779127,Small Business,A1, 36 months,Not Verified,85000,0.0064,301.6,0.0542,10000,7,10470
