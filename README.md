@@ -87,12 +87,14 @@ I compared 36-month vs 60-month loans.
 ## Dashboard
 
 ### Page 1 — Portfolio Overview
-![Page 1](Page_1.png)
+<img width="1306" height="728" alt="Page 1" src="https://github.com/user-attachments/assets/6056d01f-160c-4693-abc4-d9156311ab5f" />
+
 
 A high-level view of the whole portfolio — total numbers, monthly trends, default rate, and loan breakdown by grade and purpose.
 
 ### Page 2 — Borrower & Risk View
-![Page 2](Page_2.png)
+<img width="1302" height="727" alt="Page 2" src="https://github.com/user-attachments/assets/cdab52c9-a290-4b2d-9e3a-1b4aa5a498cf" />
+
 
 Focuses on who the borrowers are — income groups, risk segments, and how default rates vary across credit grades.
 
