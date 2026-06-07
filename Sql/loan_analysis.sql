@@ -14,21 +14,7 @@
 -- ============================================
 
 
-CREATE TABLE bank_loans (
-    id             INT PRIMARY KEY,
-    member_id      INT,
-    loan_amount    INT,
-    annual_income  NUMERIC(15,2),
-    loan_status    VARCHAR(50),     -- Fully Paid / Charged Off / Current
-    grade          CHAR(1),         -- A = safest, G = riskiest
-    purpose        VARCHAR(100),
-    address_state  VARCHAR(5),
-    int_rate       NUMERIC(6,4),    -- stored as decimal e.g. 0.12 = 12%
-    dti            NUMERIC(6,2),    -- debt-to-income ratio
-    total_payment  NUMERIC(15,2),
-    term           VARCHAR(20),     -- 36 months or 60 months
-    issue_date     DATE
-);
+
 
 
 -- ============================================
@@ -41,7 +27,7 @@ SELECT
     SUM(total_payment)                            AS total_received_back,
     SUM(total_payment) - SUM(loan_amount)         AS net_profit,
     COUNT(*)                                      AS total_loans
-FROM bank_loans;
+FROM financial_loan;
 
 -- Result: $436M given, $473M received = $37M profit
 -- The bank is making money. But from who? And at what risk?
@@ -57,9 +43,9 @@ FROM bank_loans;
 
 SELECT
     loan_status,
-    COUNT(*)                                            AS loans,
-    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(), 2)  AS percentage
-FROM bank_loans
+    COUNT(*)    AS loans,
+    ROUND(COUNT(*) * 100.0 / (select count(*) from financial_loan), 2)  AS percentage
+FROM financial_loan
 GROUP BY loan_status
 ORDER BY loans DESC;
 
@@ -75,7 +61,7 @@ SELECT
     ROUND(
         COUNT(CASE WHEN loan_status = 'Charged Off' THEN 1 END) * 100.0 / COUNT(*),
     2) AS default_rate_pct
-FROM bank_loans;
+FROM financial_loan;
 
 -- 13.82% — this becomes the benchmark number for everything else.
 -- Any segment above 13.82% is worse than average. Below = better.
@@ -96,7 +82,7 @@ SELECT
     ROUND(
         COUNT(CASE WHEN loan_status = 'Charged Off' THEN 1 END) * 100.0 / COUNT(*),
     2)                                                                   AS default_rate_pct
-FROM bank_loans
+FROM financial_loan
 GROUP BY grade
 ORDER BY grade;
 
@@ -118,7 +104,7 @@ SELECT
     ROUND(
         COUNT(CASE WHEN loan_status = 'Charged Off' THEN 1 END) * 100.0 / COUNT(*),
     2)                AS default_rate_pct
-FROM bank_loans
+FROM financial_loan
 GROUP BY purpose
 ORDER BY total_amount DESC
 LIMIT 10;
@@ -144,11 +130,11 @@ SELECT
     ROUND(
         COUNT(CASE WHEN loan_status = 'Charged Off' THEN 1 END) * 100.0 / COUNT(*),
     2)                              AS default_rate_pct
-FROM bank_loans
+FROM financial_loan
 GROUP BY income_group
 ORDER BY avg_loan DESC;
 
--- Surprising finding: high income borrowers don't default much less.
+-- Surprising finding: high income borrowers don't default much.
 -- DTI (debt pressure) matters more than raw income.
 
 
@@ -163,7 +149,7 @@ SELECT
     ROUND(
         COUNT(CASE WHEN loan_status = 'Charged Off' THEN 1 END) * 100.0 / COUNT(*),
     2)                                                                   AS default_rate_pct
-FROM bank_loans
+FROM financial_loan
 GROUP BY term;
 
 -- 60-month loans default more than 36-month loans.
@@ -181,7 +167,7 @@ SELECT
     ROUND(
         COUNT(CASE WHEN loan_status = 'Charged Off' THEN 1 END) * 100.0 / COUNT(*),
     2)                AS default_rate_pct
-FROM bank_loans
+FROM financial_loan
 GROUP BY address_state
 ORDER BY total_disbursed DESC
 LIMIT 10;
@@ -200,7 +186,7 @@ SELECT
     ROUND(
         COUNT(CASE WHEN loan_status = 'Charged Off' THEN 1 END) * 100.0 / COUNT(*),
     2)                                                                    AS default_rate_pct
-FROM bank_loans;
+FROM financial_loan;
 
 -- Repayment rate > 100% because interest is included in payments.
 -- Portfolio is healthy overall, but the 13.82% default rate
