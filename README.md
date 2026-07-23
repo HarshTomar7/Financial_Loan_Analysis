@@ -1,5 +1,5 @@
 # 🏦 Bank Loan Portfolio Risk Analysis
-**SQL + Python + Power BI &nbsp;|&nbsp; Harsh Singh Tomar**
+**SQL + Power BI &nbsp;|&nbsp; Harsh Singh Tomar**
 
 ---
 
@@ -12,7 +12,7 @@ Some borrowers pay back on time. Some don't. The bank needs to know:
 - Which borrowers are risky?
 - Where are the losses coming from?
 
-I took a dataset of **38,576 real loan records** and answered these questions using SQL, Python, and Power BI.
+I took a dataset of **38,576 real loan records** and answered these questions using SQL and Power BI.
 
 ---
 
@@ -28,17 +28,10 @@ Each row in the dataset is one loan. It tells us:
 
 ## Tools & Approach
 
-This project has three layers built on the same dataset:
-
 | Layer | Tool | What It Does |
 |---|---|---|
 | SQL Analysis | PostgreSQL | 9 queries — profitability, default rate, grade risk, purpose, income, term, state |
-| Python EDA | Pandas, NumPy, Matplotlib, Seaborn | Same 9 analyses rebuilt in Python + visualizations for every step |
 | Dashboard | Power BI (DAX) | Interactive executive dashboard — portfolio overview and borrower risk view |
-
-The SQL and Python analyses run independently on the same data. Landing on the same numbers in both gave me confidence the findings were correct, not a query bug.
-
-Python adds one thing SQL doesn't do cleanly: **multi-condition income grouping using `np.select()`**, and a chart for every analysis step using Matplotlib and Seaborn.
 
 ---
 
@@ -87,7 +80,7 @@ Looked at what borrowers said they needed the money for.
 ---
 
 ### Step 5 — Does income predict repayment?
-Split borrowers into Low, Middle, and High income groups (using `np.select()` in Python / `CASE WHEN` in SQL) and compared their default behaviour.
+Split borrowers into Low, Middle, and High income groups using `CASE WHEN` and compared their default behaviour.
 
 > **Surprising finding:** High-income borrowers don't default significantly less than mid-income ones. **DTI ratio** (debt load relative to income) was the better predictor — not raw income.
 
@@ -143,12 +136,11 @@ The bank is profitable, but the **13.82% default rate** means real money is bein
 ## Files
 
 ```
-├── loan_analysis.sql          → 9 SQL queries (PostgreSQL) — full portfolio analysis
-├── Financial_Loan.py          → Same analysis in Python (Pandas, NumPy, Matplotlib, Seaborn)
+├── loan_analysis.sql              → 9 SQL queries (PostgreSQL) — full portfolio analysis
 ├── Financial_Loan_Dashboard.pbix  → Power BI dashboard file
-├── README.md                  → This file
-├── Page_1.png                 → Dashboard page 1
-└── Page_2.png                 → Dashboard page 2
+├── README.md                      → This file
+├── Page_1.png                     → Dashboard page 1
+└── Page_2.png                     → Dashboard page 2
 ```
 
 ---
